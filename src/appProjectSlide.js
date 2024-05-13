@@ -65,9 +65,9 @@ function ProjectElement({title, imgSrc, alt, prjLink, gitLink}) {
 	return (<div className="prj-elm">
 		<div className="prj-elm-top-bar">
 			<h3>{title}</h3>
-			{(gitLink) ? (<a href={gitLink}><img className="inverted-img" src="https://henrimalahieude.github.io/img/github.png" alt="github logo"/></a>) : (<></>)}
+			{(gitLink) ? (<a target="_blank" href={gitLink}><img className="inverted-img" src="https://henrimalahieude.github.io/img/github.png" alt="github logo"/></a>) : (<></>)}
 		</div>
-		<a href={prjLink}>
+		<a target="_blank" href={prjLink}>
 			<img className="prj-img" src={imgSrc} alt={alt}/>
 		</a>
 	</div>)

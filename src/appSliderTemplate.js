@@ -39,7 +39,7 @@ function StandardContent({order, imgLink, alt, href, text}) {
 				{text}
 			</p>
 			<div className="std-cnt-img-wrapper">
-				{(href) ? (<a href={href}><StandardContentImage imgLink={imgLink} alt={alt}/></a>) : <StandardContentImage imgLink={imgLink} alt={alt}/>}
+				{(href) ? (<a target="_black" href={href}><StandardContentImage imgLink={imgLink} alt={alt}/></a>) : <StandardContentImage imgLink={imgLink} alt={alt}/>}
 			</div>
 		</div>
 	)
@@ -47,7 +47,7 @@ function StandardContent({order, imgLink, alt, href, text}) {
 	return (
 		<div className="std-content">
 			<div className="std-cnt-img-wrapper">
-				{(href) ? (<a href={href}><StandardContentImage imgLink={imgLink} alt={alt}/></a>) : <StandardContentImage imgLink={imgLink} alt={alt}/>}
+				{(href) ? (<a target="_blank" href={href}><StandardContentImage imgLink={imgLink} alt={alt}/></a>) : <StandardContentImage imgLink={imgLink} alt={alt}/>}
 			</div>
 			<p className="std-cnt-p">
 				{text}
